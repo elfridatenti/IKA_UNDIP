@@ -32,7 +32,7 @@
                 <div class="col-sm-12 mt-5">
                   <div class="text-center mt-3">
                     <div class="head-text">
-                      <h2 >Profil Alumni </h2>
+                      <h2 >PROFILE ALUMNI BERPRESTASI</h2>
                     </div>
                   </div>
                 </div>

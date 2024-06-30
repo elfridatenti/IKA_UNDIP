@@ -24,7 +24,8 @@
         <!--  <i id='admin'>Ika Undip</i> -->
         </label>
         
-        <a href='/alumni'><i class='fas fa-user'></i><span> Profile</span></a>
+        <a href='/user/alumni'><i class='fas fa-user'></i><span> Profile</span></a>
+        <a href='{{ route('alumni.job-vacancy.index') }}' class="{{ request()->is('alumni/job-vacancy*') ? 'bg-primary' : ''}}"><i class='fas fa-user'></i><span> Lowongan Kerja</span></a>
         <a href="/logout" class="btn_logout">Logout <i class="fas fa-sign-out-alt"></i></a>
       </div>
       

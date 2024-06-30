@@ -2,7 +2,7 @@
 
       <div class="top-bar">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-right">
           
           <div class="col-11 col-xl-2">
             <img src="/images/Logo.png" alt="Image" height="80" width="80">
@@ -11,13 +11,21 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="active"><a href="{{ route('beranda') }}">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li class="active"><a href="{{ route('beranda') }}">Beranda</a></li>
                 <li class="has-children">
-                  <a href="#">Gallery</a>
+                  <a href="#">Tentang</a>
                   <ul class="dropdown">
-                    <li><a href="{{ route('galery.foto') }}">Gallery Photo</a></li>
-                    <li><a href="{{ route('galery.video') }}">Gallery Video</a></li>
+                    <li><a href="{{ route('about_index') }}">Sejarah</a></li>
+                    <li><a href="{{ route('struktur_index') }}">Struktur</a></li>
+                    <li><a href="{{ route('post_index') }}">Visi-misi</a></li>
+                  </ul>
+                </li>
+                {{-- <li><a href="{{ route('about_index') }}">About</a></li> --}}
+                <li class="has-children">
+                  <a href="#">Galeri</a>
+                  <ul class="dropdown">
+                    <li><a href="{{ route('galery.foto') }}">Galeri Foto</a></li>
+                    <li><a href="{{ route('galery.video') }}">Galeri Video</a></li>
                   </ul>
                 </li>
 
@@ -25,14 +33,14 @@
                   <a href="#">Keanggotaan</a>
                   <ul class="dropdown">
                     <li><a href="{{ route('keanggotaan.manfaat') }}">Manfaat Keanggotaan</a></li>
-                    <li><a href="{{ route('keanggotaan.proses') }}">Proses Bergabung</a></li>
+                    <li><a href="{{ route('bergabung.proses') }}">Proses Bergabung</a></li>
                   </ul>
                 </li>
                 <li><a href="{{ route('alumni.index') }}">Alumni</a></li>
-                <li><a href="{{ route('news_index') }}">News</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="{{ route('news_index') }}">Berita</a></li>
+                <li><a href="{{ route('index_contact') }}">Kontak</a></li>
                 <li><a href="{{ route('signin') }}">Login</a></li>
-                <li><a href="{{ route('register') }}">Registrasi</a></li>
+                <li><a href="{{ route('register') }}">Resgiter</a></li>
               </ul>
             </nav>
           </div>

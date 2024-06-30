@@ -174,7 +174,7 @@
       });
 
       setTimeout(() => {
-        location.replace('{{ route('beranda') }}');
+        location.replace('{{ route('signin') }}');
       }, 3000);
     </script>
   @endif

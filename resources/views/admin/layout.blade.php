@@ -23,23 +23,30 @@
     </div>
     
 		</header>
-        <div class='sidebar'>
-      <label for='check'>
+      <div class='sidebar'>
+        <label for='check'>
           <i class='fas fa-bars sidebar_btn' id='sidebar_btn'></i>
           <i href='' id='admin'>Ika Undip</i>
         <!--  <i id='admin'>Ika Undip</i> -->
         </label>
         
-        <a href=''><i class='fas fa-user'></i><span> Data user</span></a>
+        <li><a href="#"><i class="fas fa-home"></i> DASHBOARD</a></li>
         <a href="{{ route('dashboard.news.index') }}" class="{{ request()->is('dashboard/news*') ? 'bg-primary' : '' }}"><i class='fas fa-newspaper'></i><span> Data Berita</span></a>
         <a href='{{ route('dashboard.alumni.index') }}' class="{{ request()->is('dashboard/alumni*') ? 'bg-primary' : '' }}"><i class='fas fa-graduation-cap'></i><span> Data Alumni</span></a>
         <a href='{{ route('dashboard.profile_alumni.index') }}' class="{{ request()->is('dashboard/profile_alumni*') ? 'bg-primary' : '' }}"><i class='fas fa-graduation-cap'></i><span> Data Profile Alumni</span></a>
-        <a href=''><i class='fas fa-graduation-cap'></i><span> Data Pengalaman</span></a>
-        <a href=''><i class='fas fa-graduation-cap'></i><span> Data Keahlian</span></a>
-        <a href=''><i class='fas fa-city'></i><span> Data Kota</span></a>
+        
         <a class="{{ request()->is('dashboard/foto*') ? 'bg-primary' : '' }}" href='{{ route('dashboard.foto.index') }}'><i class='fas fa-image'></i><span> Data Gallery Foto</span></a>
         <a class="{{ request()->is('dashboard/video*') ? 'bg-primary' : '' }}" href='{{ route('dashboard.video.index') }}'><i class='fas fa-image'></i><span> Data Gallery Video</span></a>
-        <a href=''><i class='fas fa-phone'></i><span> Data Contact Us</span></a>
+        <a href="{{route('dashboard.contact.index') }}" class="{{request()->is('dashboard/contact*') ? 'bg-primary' : ''}}"><i class='fas fa-graduation-cap'></i>Data Contact</span></a>
+        <a href='{{ route('dashboard.article.edit', '1') }}'><i class='fas fa-user'></i><span> Manfaat Keanggotaan</span></a>
+        <a href='{{ route('dashboard.prosesbergabung.edit', '1') }}'><i class='fas fa-flag'></i><span> Proses Bergabung</span></a>
+        <a href='{{ route('dashboard.post.index' ) }}'><i class='fas fa-flag'></i><span> Visi-misi</span></a>
+        <a href='{{ route('dashboard.struktur.index' ) }}'><i class='fas fa-users'></i><span> Struktur</span></a>
+
+        <a href="{{ route('dashboard.about.index') }}" class="{{ request()->is('dashboard/about*') ? 'bg-primary' : '' }}"><i class='fas fa-info-circle'></i><span> Tentang Kami</span></a>
+        {{-- <a href='{{ route('dashboard.article.edit', '2') }}'><i class='fas fa-user'></i><span> Manfaat 2</span></a> --}}
+        
+        <a href='{{ route('dashboard.job-vacancy.index') }}' class="{{ request()->is('dashboard/job-vacancy*') ? 'bg-primary' : '' }}"><i class='fas fa-user'></i><span> Lowongan Pekerjaan</span></a>
 
         <a href="/logout" class="btn_logout" style="color:#121629">Logout <i class="fas fa-sign-out-alt"></i></a>
       </div>
